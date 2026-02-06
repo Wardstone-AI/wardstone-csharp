@@ -8,14 +8,19 @@
 
     <!-- NuGet package metadata -->
     <PackageId>Wardstone</PackageId>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Wardstone</Authors>
     <Description>Official C# SDK for the Wardstone LLM security API. Detect prompt attacks, content violations, data leakage, and unknown links.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://wardstone.ai</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Wardstone-AI/wardstone-csharp</RepositoryUrl>
     <PackageTags>wardstone;llm;security;prompt-injection;content-moderation</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
 
   <ItemGroup>
     <InternalsVisibleTo Include="Wardstone.Tests" />
